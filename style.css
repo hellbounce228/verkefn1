@@ -1,0 +1,13 @@
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  margin: 0;
+  padding: 1.5rem;
+  background: #f1f4f2;
+  color: #202923;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
