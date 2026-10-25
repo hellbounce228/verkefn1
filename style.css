@@ -19,6 +19,43 @@ body {
   border-radius: 1.25rem;
 }
 
+.theme-toggle {
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #dce5dc;
+  border-radius: 0.6rem;
+  background: #f4f8f4;
+  color: #245b3d;
+  font: inherit;
+  cursor: pointer;
+}
+
+body.night-mode {
+  background: #18211b;
+  color: #e5eee7;
+}
+
+body.night-mode .about-card {
+  background: #26332a;
+}
+
+body.night-mode h1,
+body.night-mode .links a,
+body.night-mode .theme-toggle {
+  color: #a9d8b7;
+}
+
+body.night-mode .intro,
+body.night-mode .links span {
+  color: #c0cec3;
+}
+
+body.night-mode .links a,
+body.night-mode .theme-toggle {
+  border-color: #46584a;
+  background: #303f34;
+}
+
 h1 {
   margin: 0;
   color: #245b3d;
@@ -37,12 +74,37 @@ h2 {
   font-size: 1.15rem;
 }
 
+.links-toggle {
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.6rem;
+  background: #245b3d;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.links-toggle:hover,
+.links-toggle:focus-visible {
+  background: #19452d;
+}
+
+.links-toggle:focus-visible {
+  outline: 3px solid #78a586;
+  outline-offset: 3px;
+}
+
 .links {
   display: grid;
   gap: 0.75rem;
   margin: 0;
+  margin-top: 0.75rem;
   padding: 0;
   list-style: none;
+}
+
+.links[hidden] {
+  display: none;
 }
 
 .links a {
