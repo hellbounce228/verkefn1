@@ -6,6 +6,7 @@
     <meta name="description" content="A little about me, what I study, and what I enjoy.">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
   </head>
   <body>
     <main class="about-card">
@@ -19,7 +20,10 @@
 
       <section aria-labelledby="links-heading">
         <h2 id="links-heading">Find me online</h2>
-        <ul class="links">
+        <button class="links-toggle" type="button" aria-expanded="false" aria-controls="links">
+          Show my links
+        </button>
+        <ul class="links" id="links" hidden>
           <li><a href="https://www.instagram.com/hellbounce_/" target="_blank" rel="noopener noreferrer">Instagram <span>@hellbounce</span></a></li>
           <li><a href="https://swaglaboratories.com" target="_blank" rel="noopener noreferrer">My side project (designed mainly for phones)<span>swaglaboratories.com</span></a></li>
         </ul>
