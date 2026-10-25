@@ -3,11 +3,73 @@ body {
   min-height: 100vh;
   place-items: center;
   margin: 0;
-  padding: 1.5rem;
-  background: #f1f4f2;
-  color: #202923;
-  font-family: Arial, sans-serif;
+
+  padding: 2rem 1rem;
+  
+  background: #f2f5f1;
+  color: #26342b;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
+.about-card {
+  width: min(100%, 42rem);
+  padding: clamp(1.5rem, 6vw, 3.5rem);
+  background: #fff;
+  border-radius: 1.25rem;
+}
 
+h1 {
+  margin: 0;
+  color: #245b3d;
+  font-size: clamp(2rem, 7vw, 3.25rem);
+  line-height: 1.15;
+}
+
+.intro {
+  margin: 1.25rem 0 2rem;
+  color: #536158;
+  font-size: 1.1rem;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.links {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #dce5dc;
+  border-radius: 0.75rem;
+  color: #245b3d;
+  text-decoration: none;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.links a:hover,
+.links a:focus-visible {
+  border-color: #78a586;
+  background: #f4f8f4;
+}
+
+.links a:focus-visible {
+  outline: 3px solid #78a586;
+  outline-offset: 3px;
+}
+
+.links span {
+  color: #65736a;
+  text-align: right;
+}
